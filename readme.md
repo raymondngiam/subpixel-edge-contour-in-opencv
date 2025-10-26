@@ -8,10 +8,7 @@ OpenCV built in functionalities does not contain subpixel edge extraction method
 
 Some pixel precise edges extracted using the built-in `cv::canny` and `cv::findContours` operators are as illustrated below:  
 
-<img src='img/pixel-precise-00.png' width=24%>
-<img src='img/pixel-precise-01.png' width=24%> 
-<img src='img/pixel-precise-02.png' width=24%>
-<img src='img/pixel-precise-03.png' width=24%>
+<img src='img/Screenshot 2025-10-26 172757.png'>
 
 <br>
 
@@ -28,10 +25,7 @@ The subpixel edge extraction implementation in this repo is based on the followi
 
 Output results:
 
-<img src='img/final-00.png' width=24%>
-<img src='img/final-01.png' width=24%> 
-<img src='img/final-02.png' width=24%>
-<img src='img/final-03.png' width=24%>
+<img src='img/Screenshot 2025-10-26 172810.png'>
 
 <br>
 
@@ -82,11 +76,7 @@ cv::Mat edgeIm = cv::Mat::zeros(image.rows,image.cols,CV_8UC1);
 cv::Canny(image_gray,edgeIm,180,200);
 ```
 
-<img src='img/calib_l_01.png' width=49%>
-
-<img src='img/outputEdge.png' width=49%>
-
-
+<img src='img/Screenshot 2025-10-26 172831.png'>
 
 <div style='text-align:center'> 
 Left: Gray image. 
@@ -114,18 +104,9 @@ GetEdgeContourValidIndices(hierarchy, validIndices, excludeIndices);
 
 The outcome of the `GetEdgeContourValidIndices` method is as visualized below:
 
-<img src='img/outputEdge.png' width=31%>
-<img src='img/innerContours.png' width=31%> 
-<img src='img/externalContours.png' width=31%>
+<img src='img/Screenshot 2025-10-26 172852.png'>
 
 <br>
-
-<img src='img/closed-up-edge-image.png' width=31%>
-<img src='img/closed-up-inner-contour.png' width=31%> 
-<img src='img/closed-up-external-contour.png' width=31%>
-
-<br>
-
 
 <div style='text-align:center'> 
 Left: Binary edge image. <br>
@@ -291,8 +272,7 @@ $x = x_0 + tn_x$
 
 **Visual explanation on determining the direction perpendicular to the line**
 
-<img src='img/line_0deg.bmp' width=49%>
-<img src='img/line_0deg-second_derivative_primary_axis_zoomed_out.bmp' width=49%> 
+<img src='img/Screenshot 2025-10-26 172908.png'>
 
 <br>
 
@@ -313,9 +293,7 @@ Zoomed in view of a particular pixel point (y<sub>0</sub>,x<sub>0</sub>) on the 
 
 <br>
 
-<img src='img/line_0deg-second_derivative_gxx.bmp' width=31%>
-<img src='img/line_0deg-second_derivative_gyy.bmp' width=31%> 
-<img src='img/line_0deg-second_derivative_gxy.bmp' width=31%> 
+<img src='img/Screenshot 2025-10-26 172930.png'>
 <br>
 
 <div style='text-align:center'> 
@@ -378,3 +356,17 @@ One way to think about this is that **for a horizontal line, the y axis second o
 
 - C. Steger, "An unbiased detector of curvilinear structures", IEEE Transactions on Pattern Analysis and Machine Intelligence, 20(2): pp. 113-125, (1998)
 - H. Farid and E. Simoncelli, "Differentiation of Discrete Multi-Dimensional Signals" IEEE Trans. Image Processing. 13(4): pp. 496-508 (2004)
+
+### Support my works
+
+If this project saved you time, helped you learn something new, or just made your day a little easier — consider buying me a coffee. Your support helps me keep building, documenting, and sharing works like this with the community.
+
+<a href="https://github.com/sponsors/raymondngiam?frequency=one-time&sponsor=raymondngiam" target="_blank">
+  <img src="https://img.shields.io/badge/Buy%20me%20a%20coffee-%E2%9D%A4-orange?logo=githubsponsors&style=flat-square" alt="Sponsor me on GitHub" />
+</a>
+
+---
+
+<footer>
+  <p>&copy; 2022-2025 Raymond Ngiam. All rights reserved.</p>
+</footer>
